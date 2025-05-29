@@ -1,0 +1,27 @@
+.running-text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; /* Ensure it spans the full width */
+  }
+  
+  .running-text span {
+    display: inline-block;
+    padding-left: 100%; /* Start outside the viewport */
+    animation: marquee 10s linear infinite; /* Adjust speed with 10s */
+    font-size: 16px; /* Customize text size */
+    color: #007bff; /* Bootstrap primary color */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Keyframes for the scrolling effect */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
